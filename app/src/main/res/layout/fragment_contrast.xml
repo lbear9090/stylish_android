@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootBrightness"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_background_end">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controller"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header">
+
+        <com.stylelist.EditPhotoUtils.Contrast.ContrastView
+            android:id="@+id/contrastView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/ivLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/gold_theme_color"/>
+
+        <LinearLayout
+            android:id="@+id/llProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrast"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/tvProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.hoanganhtuan95ptit.library.TwoLineSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:high_color="@color/gold_theme_color"
+            app:line_color="@color/colorAccent"
+            app:line_width="1dp"
+            app:nail_color="@color/gold_theme_color"
+            app:nail_radius="3dp"
+            app:nail_stroke_width="1dp"
+            app:thumb_color="@color/gold_theme_color"
+            app:thumb_radius="6dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Contrast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium3" />
+    </RelativeLayout>
+</RelativeLayout>

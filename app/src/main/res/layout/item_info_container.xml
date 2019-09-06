@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:alpha="0.5"
+    android:background="@drawable/rounded_rectangle"
+    android:padding="4dp">
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_post_item_item_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/text_post_item_price"
+        android:layout_toStartOf="@+id/text_post_item_price"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="Dress"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small2" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_post_item_own_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_post_item_item_tag_name"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small2" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_post_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:textColor="@color/gold_theme_color"
+        android:textSize="@dimen/font_small2"
+        tools:text="Hire $52.32" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_item_post_own_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_post_item_own_number"
+        android:layout_alignTop="@+id/text_post_item_own_number"
+        android:layout_marginLeft="4dp"
+        android:layout_toEndOf="@+id/text_post_item_own_number"
+        android:text="people own this"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small2" />
+</RelativeLayout>

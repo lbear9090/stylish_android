@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Activity.SettingsActivity">
+
+    <include
+        layout="@layout/custom_back_actionbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="PROFILE"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:textColor="@color/black_overlay" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_settings_security"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Security Settings"
+                android:textAllCaps="false"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:textColor="@color/black"
+                android:onClick="goToSecurity"/>
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_settings_blocked"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Blocked users"
+                android:textAllCaps="false"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:textColor="@color/black"
+                android:onClick="goToBlocked"/>
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:text="ALERT &amp; NOTIFICATIONS"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:textColor="@color/black_overlay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="Location Service"
+                    app:customFont="GT-Walsheim-Regular.ttf"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/switch_settings_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:checked="false"
+                    tools:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    app:customFont="GT-Walsheim-Regular.ttf"
+                    android:text="Send read receipt"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/switch_settings_send_receipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="Push Notifications"
+                    app:customFont="GT-Walsheim-Regular.ttf"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/switch_settings_push_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_settings_website"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/white"
+                android:text="Website"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:onClick="goToWebSite"/>
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_settings_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/white"
+                android:text="Delete Account"
+                android:textAllCaps="false"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                android:onClick="deleteAccount"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </ScrollView>>
+
+</LinearLayout>

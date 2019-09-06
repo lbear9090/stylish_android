@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stylelist">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.stylelist.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".Utils.StyleListApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- <activity -->
+        <!-- android:name=".Activity.OldMainActivity" -->
+        <!-- android:label="@string/title_activity_main" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <!-- <activity -->
+        <!-- android:name="codelight.social_network.Activity.PhotoActivity" -->
+        <!-- android:label="@string/title_activity_camera" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Theme.AppCompat" -->
+        <!-- android:windowSoftInputMode="stateVisible"> -->
+        <!-- &gt; -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="codelight.social_network.Activity.CommentActivity" -->
+        <!-- android:label="@string/title_activity_comment" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Activity.ProfileActivity" -->
+        <!-- android:label="@string/title_activity_profile" /> -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="Netzwierk" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: If you change the package name of this sample app,
+                  change "lu.netzwierk" in the lines
+                  below to match the new package name.
+                -->
+                <category android:name="lu.netzwierk" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "lu.netzwierk" to match your app's package name. -->
+                <category android:name="lu.netzwierk" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <activity -->
+        <!-- android:name=".Activity.ProfileEditActivity" -->
+        <!-- android:label="@string/title_activity_profile_edit" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Activity.NotificationActivity" -->
+        <!-- android:label="@string/title_activity_notification" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Activity.SettingsActivity" -->
+        <!-- android:label="@string/title_activity_settings" /> -->
+        <!-- <activity android:name="com.desmond.squarecamera.CameraActivity" /> -->
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.MyStyleActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Activity.StyleDetailActivity"
+            android:theme="@style/SplashTheme" />
+        <activity android:name=".EditPhotoUtils.Base.EditPhotoActivity" />
+
+        <service android:name=".Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activity.PreparePostActivity" />
+        <activity android:name=".Activity.PublishDetailActivity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.ItemPostDetailActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity
+            android:name=".Activity.SecurityActivity"
+            android:parentActivityName=".Activity.SettingsActivity" />
+        <activity
+            android:name=".Activity.BlockedUsersActivity"
+            android:parentActivityName=".Activity.SettingsActivity" />
+        <activity
+            android:name=".Activity.WebViewActivity"
+            android:parentActivityName=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.FilterActivity" />
+        <activity android:name=".Activity.ContactUsActivity" />
+        <activity android:name=".Activity.HelpActivity" />
+        <activity android:name=".Activity.DeliveryActivity"></activity>
+
+    </application>
+
+</manifest>

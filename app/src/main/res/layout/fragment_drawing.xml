@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/actionbar_background_end"
+    tools:context="com.stylelist.EditPhotoUtils.Draw.DrawingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <com.stylelist.EditPhotoUtils.Draw.DrawingView
+            android:id="@+id/image_draw_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/drawing_view"
+            android:layout_alignEnd="@+id/drawing_view"
+            android:layout_alignLeft="@+id/drawing_view"
+            android:layout_alignRight="@+id/drawing_view"
+            android:layout_alignStart="@+id/drawing_view"
+            android:layout_alignTop="@+id/drawing_view"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+    <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/ivLoading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:indicatorColor="@color/gold_theme_color" />-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Drawing"
+            app:customFont="GT-Walsheim-Medium.ttf"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium3" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_notification_user_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/avatarplaceholderprofile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_notification_info"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/avatarplaceholderprofile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_notification_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium"
+        app:customFont="GT-Walsheim-Medium.ttf"
+        app:layout_constraintStart_toEndOf="@+id/image_notification_user_photo"
+        app:layout_constraintTop_toTopOf="@+id/image_notification_user_photo" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_notification_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:maxLines="1"
+        android:text="liked your post."
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="@dimen/font_medium"
+        app:layout_constraintEnd_toStartOf="@+id/image_notification_info"
+        app:layout_constraintStart_toEndOf="@+id/text_notification_username"
+        app:layout_constraintTop_toTopOf="@+id/text_notification_username" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_notification_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="12 hr"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="@dimen/font_small1"
+        app:layout_constraintBottom_toBottomOf="@+id/image_notification_user_photo"
+        app:layout_constraintStart_toEndOf="@+id/image_notification_user_photo" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/text_notification_timestamp"
+        app:layout_constraintStart_toEndOf="@+id/text_notification_timestamp"
+        app:layout_constraintTop_toTopOf="@+id/text_notification_timestamp"
+        app:srcCompat="@drawable/ic_clock" />
+
+</android.support.constraint.ConstraintLayout>

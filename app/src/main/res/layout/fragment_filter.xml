@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootFilter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_filter_selector"
+        android:layout_alignTop="@+id/image_filter_selector"
+        android:layout_below="@+id/header"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/image_filter_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="@dimen/font_medium2"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:textColor="@color/black"
+        android:text="Apply a filter?" />
+
+    <Spinner
+        android:id="@+id/image_filter_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/header"
+        android:entries="@array/image_filters"
+        android:popupBackground="@color/gray"
+        android:paddingLeft="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_filter_selector">
+
+        <com.stylelist.EditPhotoUtils.Filter.FilterView
+            android:id="@+id/filterView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_draw_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/filterView"
+            android:layout_alignEnd="@+id/filterView"
+            android:layout_alignLeft="@+id/filterView"
+            android:layout_alignRight="@+id/filterView"
+            android:layout_alignStart="@+id/filterView"
+            android:layout_alignTop="@+id/filterView"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium3"
+            android:visibility="invisible"
+            app:customFont="GT-Walsheim-Medium.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.stylelist.Activity.PublishDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_publish_detail_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium"
+            app:customFont="GT-Walsheim-Regular.ttf"/>
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_publish_item_sale_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="For Sale"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium2"
+            app:customFont="GT-Walsheim-Medium.ttf"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium2"
+                app:customFont="GT-Walsheim-Regular.ttf" />
+
+            <EditText
+                android:id="@+id/edit_publish_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/item_name_hint"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_semi_transparent"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="16sp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_publish_detail_5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_photo"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_publish_detail_1"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_1" />
+
+                <ImageView
+                    android:id="@+id/image_publish_detail_4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_photo"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_publish_detail_1"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintEnd_toStartOf="@+id/image_publish_detail_5"
+                    app:layout_constraintStart_toEndOf="@+id/image_publish_detail_3"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_1" />
+
+                <ImageView
+                    android:id="@+id/image_publish_detail_3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_photo"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_publish_detail_1"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/image_publish_detail_2"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_1" />
+
+                <ImageView
+                    android:id="@+id/image_publish_detail_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_photo"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_publish_detail_1"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintStart_toEndOf="@+id/image_publish_detail_1"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_1" />
+
+                <ImageView
+                    android:id="@+id/image_publish_detail_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_photo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btn_remove_image_1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_remove_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/image_publish_detail_1"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_1" />
+
+                <ImageView
+                    android:id="@+id/btn_remove_image_2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_remove_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/image_publish_detail_2"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_2" />
+
+                <ImageView
+                    android:id="@+id/btn_remove_image_3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_remove_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/image_publish_detail_3"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_3" />
+
+                <ImageView
+                    android:id="@+id/btn_remove_image_4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_remove_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/image_publish_detail_4"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_4" />
+
+                <ImageView
+                    android:id="@+id/btn_remove_image_5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_remove_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/image_publish_detail_5"
+                    app:layout_constraintTop_toTopOf="@+id/image_publish_detail_5" />
+            </android.support.constraint.ConstraintLayout>
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_publish_item_photo_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="Read our photo tips"
+                android:textAllCaps="false"
+                android:textColor="@color/gold_theme_color"
+                android:textSize="@dimen/font_medium1"
+                app:customFont="GT-Walsheim-Medium.ttf" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/text_publish_item_hire_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_publish_item_description"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:hint="@string/item_description_hint"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="@color/black_semi_transparent"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="@dimen/font_medium" />
+            <!--<EditText-->
+            <!--android:id="@+id/edit_publish_item_hire_condition"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/item_hire_condition_hint"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/black_semi_transparent"-->
+            <!--android:textColorHint="@color/black_overlay"-->
+            <!--android:textSize="@dimen/font_medium"/>-->
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_publish_item_hire_advise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="Read our hire condition advise"
+                android:textAllCaps="false"
+                android:textColor="@color/gold_theme_color"
+                android:textSize="@dimen/font_medium1"
+                app:customFont="GT-Walsheim-Medium.ttf" />
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/publish_detail_condition_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="32dp">-->
+
+            <!--<com.stylelist.CustomViews.CustomFontTextView-->
+            <!--android:id="@+id/textView11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="false"-->
+            <!--android:text="Condition"-->
+            <!--android:textColor="@color/black_semi_transparent"-->
+            <!--android:textSize="@dimen/font_medium2" />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spinner_publish_condition_selector"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="false"-->
+            <!--android:entries="@array/conditions"-->
+            <!--android:gravity="right"-->
+            <!--android:popupBackground="@color/white" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/edit_publish_condition_detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_below="@+id/textView11"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Item Condition Details"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:textColor="@color/black_semi_transparent"-->
+            <!--android:textColorHint="@color/black_overlay"-->
+            <!--android:textSize="@dimen/font_medium2" />-->
+            <!--</RelativeLayout>-->
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="Info"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium3"
+                app:customFont="GT-Walsheim-Bold.ttf" />
+
+            <RelativeLayout
+                android:id="@+id/publish_detail_condition_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Condition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <Spinner
+                    android:id="@+id/spinner_publish_item_hire_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:entries="@array/conditions"
+                    android:gravity="end"
+                    android:popupBackground="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_detail_location_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/customFontTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/txt_publish_item_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_centerVertical="true"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <Spinner
+                    android:id="@+id/spinner_publish_location_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:entries="@array/countries"
+                    android:gravity="end"
+                    android:popupBackground="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <Spinner
+                    android:id="@+id/spinner_publish_category_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:entries="@array/hash_tags"
+                    android:gravity="end"
+                    android:popupBackground="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_detail_delivery_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/text_delivery_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Delivery"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontButton
+                    android:id="@+id/btn_post_detail_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/text_delivery_label"
+                    android:background="@color/white"
+                    android:gravity="end|center_vertical"
+                    android:text="Select"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_detail_deposit_price_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Deposit Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <faranjit.currency.edittext.CurrencyEditText
+                    android:id="@+id/edit_publish_deposit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="$0,00"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    app:groupDivider="."
+                    app:locale="en_US"
+                    app:monetaryDivider=","
+                    app:showSymbol="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_detail_price_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Item Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium1"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <faranjit.currency.edittext.CurrencyEditText
+                    android:id="@+id/edit_publish_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="$0,00"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    app:groupDivider="."
+                    app:locale="en_US"
+                    app:monetaryDivider=","
+                    app:showSymbol="true" />
+            </RelativeLayout>
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_publish_read_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Learn about getting paid and our fees"
+                android:textAllCaps="false"
+                android:textColor="@color/gold_theme_color"
+                android:textSize="@dimen/font_medium"
+                app:customFont="GT-Walsheim-Medium.ttf" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_publish_detail_publish_another"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                android:text="publish + tag another item of photo"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintBottom_toTopOf="@+id/btn_detail_publish_straight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_detail_publish_straight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"
+                android:text="Publish and go to feed"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_publish_detail_publish_another"
+                app:layout_constraintStart_toStartOf="@+id/btn_publish_detail_publish_another" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckedTextView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+</android.support.constraint.ConstraintLayout>

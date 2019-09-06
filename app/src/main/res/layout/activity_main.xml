@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.stylelist.Activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_tabbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/action_bar">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/list_style_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:id="@+id/btn_show_grid"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_grid_selector" />
+        </LinearLayout>
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_action_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_style_container"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/list_style_container"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:text="Done"
+            android:textSize="@dimen/font_medium1"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"/>
+
+        <ImageButton
+            android:id="@+id/btn_action_compose_message"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_compose_message" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_drawer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Page Title"
+            android:textSize="@dimen/font_medium3"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Medium.ttf"/>
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_back_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:textColor="@color/black"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium"
+            app:customFont="GT-Walsheim-Regular.ttf"/>
+
+        <RelativeLayout
+            android:id="@+id/search_kit_container"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/btn_menu_drawer"
+            android:layout_toLeftOf="@+id/btn_action_compose_message"
+            android:layout_toRightOf="@+id/btn_menu_drawer"
+            android:layout_toStartOf="@+id/btn_action_compose_message"
+            android:background="@color/white">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/edit_search_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_search"
+                android:gravity="center_vertical"
+                android:text="Search All"
+                android:textColor="@color/black"
+                autofit:minTextSize="@dimen/font_small0"/>
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white_semi_transparent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_tab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/tab_ic_home"
+            android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/btn_tab_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/tab_ic_profile"
+            android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/btn_tab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/plus" />
+
+        <ImageButton
+            android:id="@+id/btn_tab_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/tab_ic_chat"
+            android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/btn_tab_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/tab_ic_activity"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_image_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_semi_transparent"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/image_item_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder_photo" />
+
+        <RelativeLayout
+            android:id="@+id/item_info_container_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/image_item_post_image"
+            android:layout_alignEnd="@+id/image_item_post_image"
+            android:layout_alignLeft="@+id/image_item_post_image"
+            android:layout_alignRight="@+id/image_item_post_image"
+            android:layout_alignStart="@+id/image_item_post_image"
+            android:layout_alignTop="@+id/image_item_post_image" />
+
+        <ImageView
+            android:id="@+id/btn_binocular"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/image_item_post_image"
+            android:src="@drawable/binocular_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

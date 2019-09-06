@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.stylelist.Fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_tab_height"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_tab_recent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/tab_recent"
+            android:textAllCaps="false"
+            app:customFont="GT-Walsheim-Medium.ttf"
+            android:textColor="@drawable/top_tab_icon_color"
+            android:textSize="@dimen/font_medium1" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_tab_trending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/tab_trending"
+            app:customFont="GT-Walsheim-Medium.ttf"
+            android:textAllCaps="false"
+            android:textColor="@drawable/top_tab_icon_color"
+            android:textSize="@dimen/font_medium1" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_tab_featured"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/tab_featured"
+            app:customFont="GT-Walsheim-Medium.ttf"
+            android:textAllCaps="false"
+            android:textColor="@drawable/top_tab_icon_color"
+            android:textSize="@dimen/font_medium1" />
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/loading_progress_bar"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:indeterminate="true"-->
+        <!--style="@style/Base.Widget.AppCompat.ProgressBar"-->
+        <!--android:indeterminateTint="@color/gold_theme_color"-->
+        <!--android:indeterminateTintMode="src_in"-->
+        <!--android:layout_centerInParent="true" />-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/post_list_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2">
+
+        <ListView
+            android:id="@+id/listview_home_posts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <GridView
+        android:id="@+id/grid_view_home_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="16dp"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp" />
+
+</RelativeLayout>

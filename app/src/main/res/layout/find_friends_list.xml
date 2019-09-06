@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile_friend_list"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/avatarplaceholderprofile"/>
+
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_username_friend_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/image_profile_friend_list"
+        android:layout_toRightOf="@+id/image_profile_friend_list"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium"
+        app:customFont="GT-Walsheim-Medium.ttf" />
+
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_photo_number_friend_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_profile_friend_list"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/image_profile_friend_list"
+        android:layout_toRightOf="@+id/image_profile_friend_list"
+        android:text="0 Photos"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="@dimen/font_small2"
+        app:customFont="GT-Walsheim-Regular.ttf" />
+
+
+    <com.stylelist.CustomViews.CustomFontButton
+        android:id="@+id/btn_follow_friend_list"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/follow_button_back"
+        android:focusable="false"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Follow"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium" />
+
+</RelativeLayout>

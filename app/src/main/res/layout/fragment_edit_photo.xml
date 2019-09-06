@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Edit Photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium3"
+            app:customFont="GT-Walsheim-Medium.ttf" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium"
+            app:customFont="GT-Walsheim-Regular.ttf" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium"
+            app:customFont="GT-Walsheim-Regular.ttf" />
+
+    </RelativeLayout>
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/tvTopGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:padding="10dp"
+        android:text="Press draw icon and draw around an item you wish to tag for sale, hire or inspiration. Then press 'Done' to continue."
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium3"
+        app:customFont="GT-Walsheim-Medium.ttf" />
+
+    <RelativeLayout
+        android:id = "@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvBottomGuide"
+        android:layout_below="@+id/tvTopGuide">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ivPhotoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/image_draw_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivPhotoView"
+            android:layout_alignEnd="@+id/ivPhotoView"
+            android:layout_alignLeft="@+id/ivPhotoView"
+            android:layout_alignRight="@+id/ivPhotoView"
+            android:layout_alignStart="@+id/ivPhotoView"
+            android:layout_alignTop="@+id/ivPhotoView"
+            app:srcCompat="@drawable/placeholder_photo" />
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/ivLoadingEdit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:indicatorColor="@color/gold_theme_color" />-->
+
+    </RelativeLayout>
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/tvBottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/controller"
+        android:padding="10dp"
+        android:text="Alternatively, press 'Done' without drawing to post without tagging an item."
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium3"
+        app:customFont="GT-Walsheim-Medium.ttf" />
+
+
+    <LinearLayout
+        android:id="@+id/controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

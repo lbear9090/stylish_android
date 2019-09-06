@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.stylelist.Activity.SplashActivity">
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView17"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="StyleList"
+        android:textColor="@color/gold_theme_color"
+        android:textSize="48dp"
+        app:customFont="GT-Walsheim-Regular.ttf" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Welcome to StyleList, the social network\nthat allows you to showcase your style and\nget inspiration from others."
+        android:textColor="@color/white_semi_transparent"
+        android:textSize="@dimen/font_medium1"
+        app:customFont="GT-Walsheim-Regular.ttf" />
+</RelativeLayout>

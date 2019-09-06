@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_comment_item_user_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/avatarplaceholderprofile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_comment_item_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/image_comment_item_user_profile"
+        android:text="John Doe"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium"
+        app:layout_constraintStart_toEndOf="@+id/image_comment_item_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/image_comment_item_user_profile" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_comment_item_comment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/text_comment_item_user_name"
+        android:maxLines="3"
+        android:text="This is comment field."
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="@dimen/font_medium"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_comment_item_user_name"
+        app:layout_constraintTop_toTopOf="@+id/text_comment_item_user_name" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_comment_item_timstamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="32m"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="@dimen/font_small2"
+        app:layout_constraintBottom_toBottomOf="@+id/image_comment_item_user_profile"
+        app:layout_constraintStart_toEndOf="@+id/image_comment_item_user_profile" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_comment_item_timstamp"
+        app:layout_constraintStart_toEndOf="@+id/text_comment_item_timstamp"
+        app:layout_constraintTop_toTopOf="@+id/text_comment_item_timstamp"
+        app:srcCompat="@drawable/ic_clock" />
+</android.support.constraint.ConstraintLayout>

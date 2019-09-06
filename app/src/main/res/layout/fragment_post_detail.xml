@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="48dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.stylelist.Fragments.PostDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/constraintLayout"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="267dp">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_like_selected" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_post_detail_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignEnd="@+id/imageButton"
+            android:layout_alignLeft="@+id/imageButton"
+            android:layout_alignRight="@+id/imageButton"
+            android:layout_alignStart="@+id/imageButton"
+            android:layout_alignTop="@+id/imageButton"
+            android:gravity="center"
+            android:text=""
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_post_detail_liked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_post_detail_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/avatarplaceholderprofile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/image_post_detail_photo"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_post_detail_profile" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_post_detail_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="John Doe"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            app:layout_constraintStart_toEndOf="@+id/image_post_detail_profile"
+            app:layout_constraintTop_toTopOf="@+id/image_post_detail_profile" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_post_detail_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="#johndoe"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="@dimen/font_small2"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            app:layout_constraintBottom_toBottomOf="@+id/image_post_detail_profile"
+            app:layout_constraintStart_toEndOf="@+id/image_post_detail_profile" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/text_post_detail_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="2 h"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="@dimen/font_small1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/image_post_detail_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_post_detail_profile" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/list_view_post_comments_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+        <ListView
+            android:id="@+id/list_post_detail_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

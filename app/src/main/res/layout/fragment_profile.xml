@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context="com.stylelist.Fragments.ProfileFragment">
+
+
+    <!--<ListView-->
+    <!--android:id="@+id/listview_profile_page"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/image_profile_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_profile_show_grid"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_grid_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.stylelist.CustomViews.CustomFontButton
+                    android:id="@+id/btn_tab_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="8dp"
+                    android:text="@string/tab_inspire"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/bottom_tab_icon_color"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontButton
+                    android:id="@+id/btn_tab_for_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="4dp"
+                    android:text="@string/tab_for_sale"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/bottom_tab_icon_color"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontButton
+                    android:id="@+id/btn_tab_for_hire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="4dp"
+                    android:text="@string/tab_for_hire"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/bottom_tab_icon_color"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+            </LinearLayout>
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/text_profile_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:text="John Doe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/text_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#johndoe"
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="@dimen/font_small2"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintStart_toStartOf="@+id/text_profile_fullname"
+                app:layout_constraintTop_toBottomOf="@+id/text_profile_fullname" />
+
+            <com.stylelist.CustomViews.CustomFontTextView
+                android:id="@+id/text_profile_bio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/profile_placeholder_bio"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintEnd_toEndOf="@+id/btn_profile_edit"
+                app:layout_constraintStart_toStartOf="@+id/text_profile_fullname"
+                app:layout_constraintTop_toBottomOf="@+id/text_profile_username" />
+
+            <ImageButton
+                android:id="@+id/btn_profile_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_chat"
+                app:layout_constraintBottom_toBottomOf="@+id/text_profile_fullname"
+                app:layout_constraintStart_toEndOf="@+id/text_profile_fullname"
+                app:layout_constraintTop_toTopOf="@+id/text_profile_fullname" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_profile_edit"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_outline_button"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small2"
+                android:gravity="center"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_profile_follow"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/follow_button_back"
+                android:text="Follow"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small2"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.stylelist.CustomViews.CustomFontButton
+                android:id="@+id/btn_profile_style"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_outline_button"
+                android:text="@string/my_style"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small2"
+                android:gravity="center"
+                app:customFont="GT-Walsheim-Regular.ttf"
+                app:layout_constraintEnd_toEndOf="@+id/btn_profile_edit"
+                app:layout_constraintStart_toStartOf="@+id/btn_profile_edit"
+                app:layout_constraintTop_toBottomOf="@+id/btn_profile_edit" />
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginStart="56dp"
+            android:background="@color/white_semi_transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_profile_back"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/text_profile_post_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="0 posts"
+                    android:textColor="@color/black_semi_transparent"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/text_profile_follower_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="0 followers"
+                    android:textColor="@color/black_semi_transparent"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:id="@+id/text_profile_following_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="0 following"
+                    android:textColor="@color/black_semi_transparent"
+                    android:textSize="@dimen/font_small2"
+                    app:customFont="GT-Walsheim-Regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile_profile_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="126dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/avatarplaceholderprofile"
+            app:civ_border_color="@color/white"
+            app:civ_border_overlay="false"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/image_profile_back" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/listview_profile_post_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraintLayout">
+        <ListView
+            android:id="@+id/listview_profile_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <GridView
+        android:id="@+id/grid_view_profile_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraintLayout"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:horizontalSpacing="16dp"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp" />
+</RelativeLayout>

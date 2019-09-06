@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:padding="8dp">
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Profile"
+        android:textAllCaps="true"
+        android:textColor="@color/gold_theme_color"
+        android:textSize="@dimen/font_medium1"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_menu_profile"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/avatarplaceholderprofile"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toStartOf="@+id/text_menu_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_menu_title" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_menu_profile_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium1"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        app:layout_constraintStart_toEndOf="@+id/image_menu_profile"
+        app:layout_constraintTop_toTopOf="@+id/image_menu_profile" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_menu_profile_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="#johndoe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small2"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        app:layout_constraintBottom_toBottomOf="@+id/image_menu_profile"
+        app:layout_constraintStart_toEndOf="@+id/image_menu_profile" />
+</android.support.constraint.ConstraintLayout>

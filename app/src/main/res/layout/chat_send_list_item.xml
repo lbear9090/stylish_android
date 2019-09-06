@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:padding="8dp">
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/text_chat_send_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/image_chat_send_profile"
+        android:layout_toStartOf="@+id/image_chat_send_profile"
+        android:background="@drawable/chat_send"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        app:customFont="GT-Walsheim-Regular.ttf"
+        android:text="Hello this isfdsa fds fds fdasfdsaf  test balloon."
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_chat_send_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/avatarplaceholderprofile" />
+</RelativeLayout>

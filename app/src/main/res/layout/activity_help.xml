@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpActivity"
+    android:background="@color/gray">
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/custom_back_actionbar" />
+
+    <com.stylelist.CustomViews.CustomFontButton
+        android:id="@+id/btn_common_questions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:text="Common Questions"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:onClick="commonQuestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6" />
+
+    <com.stylelist.CustomViews.CustomFontButton
+        android:id="@+id/btn_guides"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:text="Guide"
+        android:onClick="guide"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_common_questions" />
+
+    <com.stylelist.CustomViews.CustomFontButton
+        android:id="@+id/btn_general_feedback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:text="General Feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:onClick="generalFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guides" />
+
+    <com.stylelist.CustomViews.CustomFontButton
+        android:id="@+id/btn_report_problem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:text="Report a Problem"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:onClick="reportProblem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_general_feedback" />
+
+
+</android.support.constraint.ConstraintLayout>

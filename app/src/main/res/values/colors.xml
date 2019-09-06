@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">@color/colorBlack</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorSelect">@color/colorGray</color>
+    <color name="colorGray">#50000000</color>
+
+    <color name="actionbar_background_end">#1A1A1A</color>
+    <color name="gray">#cccccc</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="white_semi_transparent">#B2ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!--<color name="gold_theme_color">#f2b33d</color>-->
+    <color name="gold_theme_color">#D2A784</color>
+
+    <color name="login_facebook_background">#3b579d</color>
+</resources>

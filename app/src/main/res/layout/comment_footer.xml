@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/field"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <EditText
+        android:id="@+id/new_comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/new_comment_send"
+        android:layout_toStartOf="@+id/new_comment_send"
+        android:background="#FFFF"
+        android:hint="Add a comment"
+        android:inputType="textCapSentences|textMultiLine"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColorHint="@color/black_semi_transparent"
+        android:textSize="@dimen/font_medium" />
+
+    <ImageButton
+        android:id="@+id/new_comment_send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_comment" />
+</RelativeLayout>

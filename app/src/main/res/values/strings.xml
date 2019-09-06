@@ -1,0 +1,443 @@
+<resources>
+    <string name="app_name">StyleList</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="facebook_app_id">949988298379222</string>
+
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_facebook">Login with Facebook</string>
+    <string name="signup_facebook">Sign up with Facebook</string>
+    <string name="edit">Edit Profile</string>
+    <string name="my_style">My Style</string>
+    <string name="find_friend_title">Find Friends</string>
+
+    <!--IntroPage Texts-->
+    <string name="intro_1_text">To start off, complete the registration and login, then tag the styles and items that interest you.</string>
+    <string name="intro_2_text">Next, follow friends and others, which, matched with your already selected styles, will shape the content that will be pushed to your home screen.</string>
+    <string name="intro_3_text">Tagged items in a picture will highlight when pressed. You can tag your own items too. Simply draw around the items in your photo and tag them for sale, hire or just to inspire.</string>
+    <string name="intro_4_text">When you buy or sell items, you pay/receive money via paypal and link directly with the StyleList member to receive/post your goods.</string>
+
+    <!--Menu Titles-->
+    <string name="menu_feeds">Feeds</string>
+    <string name="menu_popular">Popular</string>
+    <string name="menu_recent">Recent</string>
+    <string name="menu_activity">Activity</string>
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_terms">Terms and Use</string>
+    <string name="menu_contact">Contact us</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_find_friends">Find Friends</string>
+    <string name="menu_log_out">Log out</string>
+
+    <!--Tab titles-->
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_chat">Message</string>
+    <string name="tab_activity">Activity</string>
+
+    <!--Fragment Titles-->
+    <string name="post_detail_title">Post Detail</string>
+
+    <string name="style_description">Select the styles that you wish to follow</string>
+
+    <string name="tab_recent">Recent</string>
+    <string name="tab_trending">Trending</string>
+    <string name="tab_featured">Featured</string>
+
+    <string name="tab_inspire">For Inspire</string>
+    <string name="tab_for_sale">For Sale</string>
+    <string name="tab_for_hire">For Hire</string>
+
+    <string name="profile_placeholder_bio">Place your bio here</string>
+
+    <string name="choose_friend_title">Choose Friend</string>
+
+    <!--Style Descriptions-->
+    <string name="m1970s_trends">The 1970s were all about those flared jeans, multicolored shirts and even tracksuits. Although it isn’t as popular today, there are certain watered-down versions of it that make it more palatable. The 1970s trend is associated with the hippie movement that helped popularize it.</string>
+    <string name="biker">The Biker style makes heavy use of leather jackets and pants, ripped jeans and slim-fit shirts. As a rule of thumb, all the elements that compile the outfit have got to be dark. This style has a note of elegance to it if used well and can easily turn some heads around.</string>
+    <string name="blackonblack">The name of the style should be enough of a clue as to what it requires: black clothing, entirely or partially. It is, obviously, a casual-type of style that is perfect to be worn when talking a walk or even going down to the grocery store. Here’s a tip: wear white sneakers to emphasize the black. </string>
+    <string name="businessman">This is almost identical to the formal style, but whereas the latter can be “tweaked”, to put it like this, in order to add or remove certain elements, the former cannot. It is the peak of elegance and says a lot about the personality of the one who is a follower of the style. </string>
+    <string name="casual">Breezy – this is the most suitable adjective to describe this particular style. It can feature anything from a white t-shirt, a nice jacket and jeans to a shirt, a thin sweater and a beanie. The shoes are more often than not sneakers or leather shoes. When done properly, it can be a sight to behold. </string>
+    <string name="casualbusinessman">The Casual Businessman trend is meant to make a man look good both at the office and out on the street, as it frequently features jackets, simple jeans, and stylish shoes. The trend stands to show that sometimes, a common polo shirt can be better than a super official one. </string>
+    <string name="classy">This implies the idea of wearing a suit or a combination of casual jeans with a nice jacket. To a certain extent, it’s just a subcategory of the Businessman style, but this one is more allowing in terms of what you can wear and still remain, as the name says it, classy.</string>
+    <string name="country">Denim jackets, shirts, boots, and hats – this is everything you need in order to nail the country style. This is very popular in the rural American areas, but it works just as fine on the streets of a city, especially if the outfit is put together tastefully. </string>
+    <string name="cuban_collar">Get a nice suit, a leather bag and a pair of sunglasses and you got yourself dressed according to the smart style. This is a classy yet extremely casual style and can have different variations like, a white shirt, black jacket and jeans (ripped or not). </string>
+    <string name="formal">The Formal style is the pickiest man style. T-shirts are not allowed: you’ve got to wear a suit, a tie and nice shoes to get it right. This is the style corporatists and business owners are into. It’s got a very steadfast dress code that cannot be violated if you mean business. </string>
+    <string name="funky">This is perhaps the most bohemian style of all. The rule is “There are no rules!” Pants can be of any color, you can wear a bandana with a bowtie – anything you can imagine would work as long as there’s an explosion of color – not to be taken as kitsch. </string>
+    <string name="gangster">This particular style is a shout-out to the classiness of the criminals from the ‘20s. It is best represented by tailored suits with the classic stripes, fedoras and ties or bowties, as well as suspenders. It’s a style that has defied time and goes on stronger with every passing year.</string>
+    <string name="hawaiian">The Hawaiian trend can make you feel like you’re in a paradisiac retreat even when you’re thousands of miles away from it. It relies heavily on shirts with flower patterns and sometimes on Hawaiian landscapes. It works best with a cigar in the corner of the mouth and a cocktail in your hand! </string>
+    <string name="hipster">The hipster trend draws heavy inspiration from vintage clothing with a sprinkle of what makes people automatically think of indie music. The trend usually features slim-fit, above-the-ankle jeans, shirts, scarves, beanies, glasses, leather shoes and various hats.  Sweaters, jackets and suspenders are common, too.   </string>
+    <string name="lumbersexual">The Lumbersexual Trend is as much of a lifestyle as it is a fashion fad and it has transformed the usual attire of the lumberjack into a worldwide craze. The trend usually features a shirt with square patterns and jeans and indispensably a beard, a couple of tattoos and glasses (optional).</string>
+    <string name="post_soviet">This somewhat political aesthetic has gotten a lot of attention lately. To some extent, any piece of clothing that has Russian letters on it falls into the PS trend. So do leather jackets, jumpsuits, hoodies, etc. It is somehow reminiscent of the punk/skinhead fashion that is still in vogue today.</string>
+    <string name="preppy">This particular trend is fundamentally for those who want to sport a college-y look, so it features polo shirts with large collars and V neck sweaters. The Preppy trend is immediately recognizable by the fact that the one who dresses as such looks like he wears a college, alumnus uniform. </string>
+    <string name="retro">The Retro trend refers to a style that encompasses all the “vintage” trends starting with the ‘20s and well into the ‘80s. Printed, multicolored shirts and jeans with suspenders, scarves, sweaters, flared pants and bowties are just the peak of the iceberg when it comes to the elements you can use to pull off a retro outfit. </string>
+    <string name="rockster">The Rockster style is almost synonymous with the biker style that inspired it in the first place. Leather jackets, bandanas tied to black jeans and various chains are frequent elements. It is as casual as it is elegant and just a tad menacing in certain circumstances. It suits pretty much all men.</string>
+    <string name="sexy">The Sexy style needs, first of all, the right attitude and then the fitting clothes to go with that. It is usually worn with a beard and clothes that emphasize your physical appearance, especially when you work out. The clothes don’t matter as much as your attitude, keep that in mind. </string>
+    <string name="smart">Get a nice suit, a leather bag and a pair of sunglasses and you got yourself dressed according to the smart style. This is a classy yet extremely casual style and can have different variations like, a white shirt, black jacket and jeans (ripped or not). </string>
+    <string name="sportswear">The Sportswear, also known as Activewear Trend, was first popularized during the ‘90s and it made a surprising comeback last year, with trainers, tennis shirts, sneakers, jerseys and all sorts of polos becoming in vogue again, especially among teenagers. All in all, it’s a style that makes you look like you’re about to hit the gym. </string>
+    <string name="street">Actually, the street style could be best described as a loose mixture of multiple styles. It can represent an outfit put together with a coat, sweater and a pair of jeans, as well as a leather jacket, sweater and hoodie. It is a somewhat elusive style, since it defies a clean-cut description. </string>
+    <string name="urban">The Urban style is extremely popular among millennials and is usually representative of the rap genre of music. It features really casual outfits with large t-shirts, jeans, and sneakers, plus caps and sunglasses. It is one of the oldest and most enduring styles in the world. </string>
+    <string name="utilitarian">Cargo pants, factory clothing, pants down the boots, camouflage clothes, leather bags and denim – these are just a few of the things that compile the Utilitarian trend. Basically, this trend mixes casual outfits with garments that would usually go in industrial uniforms. It is manifold with even the cowboy outfit being Utilitarian.</string>
+
+    <string name="wblackonblack">Wearing black on black is, perhaps, one of the most fashionable combinations, being renowned in the fashion world. French women wear black on black on a regular basis, as well as fashion designers and bloggers. The secret to wearing black on black successfully is by playing with different textures and using bold accessories. </string>
+    <string name="wbohemain">Bohemian is imminently associated with carefree festivals, summer, the sea and the beach. Truthfully, this style is synonymous with loose, colorful clothing, being referred to as the hippie or boho chic style. A typical element is the use of wild, exotic textures and colorful patterns, which are far from being traditional or conventional. Skirts, loose dresses and oversized jewelry are also commonplace. </string>
+    <string name="wbusinesswoman">The businesswoman style is elegant, classy and refined. A woman who likes this style enjoys wearing sophisticated pieces that have timeless, clean-cut designs. Concurrently, she picks items of the highest quality that feature excellent craftsmanship. Her wardrobe consisting of fitting pencil skirts, blazers, and chic shirts. </string>
+    <string name="wcasualwoman">We could say that the casual style perfectly balances elegance and comfort, with an ounce of chicness. At the time being, this style is most commonly met, as it is easy to incorporate. A typical casual outfit would be a pair of fitting jeans, a beautiful, cashmere or wool sweater, and an oversized blazer. </string>
+    <string name="wcountry">Denim jackets, shirts, boots, and hats – this is everything you need in order to nail the country style. This is very popular in the rural American areas, but it works just as fine on the streets of a city, especially if the outfit is put together tastefully. </string>
+    <string name="wcute">Feminine, dreamy girls are the ones that usually adopt the cute clothing style. They prefer whimsical, playful patterns in light pink and red, as well as colorful accessories. This style is, above all, lively, combining excellent fitting clothing garments with cheerful bags, belts, headbands, necklaces, and the list may go on. </string>
+    <string name="welegant">The elegant style features refined, timeless pieces, which are less likely to go out of style, even with the passing of time. The woman who prefers to dress elegantly isn’t influenced by upcoming fashion trends and prefers clear-cut designs. Some pieces of the elegant style are the little black dress, black straight pants, cashmere sweaters, and beautiful, yet subtle jewelry. </string>
+    <string name="wexotic">The exotic style is the equivalent of unconventional. It comprises of a range of unexpected, colorful elements, which are typically unusual. It collects eye-catching, bold pieces that have sophisticated patterns and embroidery, statement, opulent jewelry and remarkable prints. Arabian and Indian elements are commonly met in designing exotic garments. </string>
+    <string name="wformal">The Formal style is the pickiest man style. T-shirts are not allowed: you’ve got to wear a suit, a tie and nice shoes to get it right. This is the style corporatists and business owners are into. It’s got a very steadfast dress code that cannot be violated if you mean business. </string>
+    <string name="wfunky">The funky style is the exact opposite of fashionable and trendy. It refers to outlandish, clashing clothing, which is typically original and eye-catching. This style can also be weird and awkward for some people; however, with the right attitude, it can look complimentary. A funky piece might be a dress or shirt that has an outlandish pattern. Combine that with a pair of shoes in a completely different color or pattern and you have a funky outfit. </string>
+    <string name="wgirly">The girly style has some elements in common with the preppy and vintage styles. Truthfully, it combines a range of elements that are especially preferred by romantic girls. Dainty details such as ruffled sleeves or whimsical patterns such as hearts and flowers are commonly met, as well as the preference for pale pink and white.</string>
+    <string name="wpreppy">The preppy look is characteristic of the fashion style presented in Gossip Girl. A-line miniskirts, collared T-Shirts, and girlie blouses are the definition of preppy. Plus, this style is commonly accessorized with geeky glasses or colorful headbands. This style is all about embracing colors and girlie garments. </string>
+    <string name="wpunk">Punk fashion is a statement against everything conventional. That’s why it’s seen as a form of revolt. Women who embrace this fashion style enjoy wearing leather items – and this applies to both jackets and pants – accessorized with spikes, studs, and chains. Skinny jeans and bulky boots are also preferred. </string>
+    <string name="wrocker">Ripped jeans, leather jackets, graphic, vintage T-Shirts and bulky boots – these are the main elements that make a typical rocker outfit. For the most part, the clothes are in dark hues, black being the most commonly met color. Depending on the music preferences of the wearer, there are various variables of the rocker style. </string>
+    <string name="wsexy">Embracing a sexy style refers to outlining your most flattering features and confidently showing your body. Clothing garments such as tight and short skirts and revealing shirts are typical of this style, as well as tight fitting shoes. In order to pull this style off, one has to be utterly confident. </string>
+    <string name="wsmartcasual">This is a reinterpretation of the preppy style, incorporating a range of elements that are typical of the casual outfits. We could refer to it as a style that is somehow informal, yet neat. Fitted shirts, blazers and clear-cut shirts and pants are characteristic of the smart style. </string>
+    <string name="wsophisticated">If you are into the sophisticated style, it means that for you, everything has to be of the finest quality. At the same time, the textures and designs of the clothing pieces make a statement. This style is characteristic of businesswomen. An example would be the classic, yet sophisticated little black dress, or a stunning oversized or fitting wool coat. </string>
+    <string name="wsporty">The sporty style usually comprises of typical sportswear elements such as runner shoes – or shoes in a similar style. A sporty look is, above all, effortless and comfortable, and women who prefer this style wear plain colors such as black, white and gray. Tight runner pants, comfy sweatpants, and basic tees represent the go-to combination for the sporty style adept. </string>
+    <string name="wstreet">Street style fashion is similar to what you might see in magazines or on the runway. This style is often associated with the clothing items worn by fashion bloggers or designers who aim at incorporating the latest trends into everyday outfits. This way, people could get inspired to wear fashionable items that may seem un-wearable on a day-to-day basis. It can include anything, from bold accessories to a simple pair of jeans and a military jacket.</string>
+    <string name="wtomboy">Trendyrmally be worn by men. This style is simple, minimalist and modern, being the exact opposite of the sophisticated, elegant look. </string>
+    <string name="wtrendy">This is the style embraced by women who follow most fashion trends. These women are likely to renew their wardrobe every 2 or 3 months, whenever a new fashion trend is released. There is no other way in which we can characterize the trendy style, as it is continually changing. </string>
+    <string name="wvibrant">This style is meant for the adventurous spirit that relishes dynamism. It is an energetic, powerful fashion style that incorporates a collection of extravagant pieces featuring asymmetrical designs, bold colors and dramatic, fabulous embroidery. In other words, the vibrant style aims at directing the attention to what you are wearing. </string>
+    <string name="wvintage">This fashion style is romantic and whimsical, being the ultimate definition of femininity. We could say that vintage pieces reflect the fashion styles characteristic of the period between the 1920s and the 1950s and even through to the 1970s. Typical examples of the vintage style are flapper dresses, full skirts, and petticoats, pearls accessorized by opulent brooches, and platform shoes. </string>
+
+
+    <string-array name="hash_tags">
+        <item>Bags</item>
+        <item>Accessories</item>
+        <item>Blazer</item>
+        <item>Jacket</item>
+        <item>Skirt</item>
+        <item>Pants</item>
+        <item>Shirt</item>
+        <item>Shoes</item>
+        <item>Dress</item>
+        <item>Suit</item>
+    </string-array>
+
+    <string-array name="item_sale_type">
+        <item>For Inspiration</item>
+        <item>For Sale</item>
+        <item>For Hire</item>
+    </string-array>
+
+    <string-array name="image_filters">
+        <item>None</item>
+        <item>Grayscale</item>
+        <item>Glow</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="delivery_options">
+        <item>My own shipping</item>
+        <item>Meet in person</item>
+        <item>Meet in person, My own shipping</item>
+    </string-array>
+    <!--
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Åland Islands</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia, Plurinational State of</item>
+        <item>Bonaire, Sint Eustatius and Saba</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>Brunei Darussalam</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Congo, the Democratic Republic of the</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Côte d'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Curaçao</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Falkland Islands (Malvinas)</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Holy See (Vatican City State)</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran, Islamic Republic of</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Isle of Man</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jersey</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Korea, Democratic People's Republic of</item>
+        <item>Korea, Republic of</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Lao People's Democratic Republic</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macao</item>
+        <item>Macedonia, the Former Yugoslav Republic of</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia, Federated States of</item>
+        <item>Moldova, Republic of</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine, State of</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Réunion</item>
+        <item>Romania</item>
+        <item>Russian Federation</item>
+        <item>Rwanda</item>
+        <item>Saint Barthélemy</item>
+        <item>Saint Helena, Ascension and Tristan da Cunha</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Martin (French part)</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Sint Maarten (Dutch part)</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syrian Arab Republic</item>
+        <item>Taiwan, Province of China</item>
+        <item>Tajikistan</item>
+        <item>Tanzania, United Republic of</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela, Bolivarian Republic of</item>
+        <item>Viet Nam</item>
+        <item>Virgin Islands, British</item>
+        <item>Virgin Islands, U.S.</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+-->
+
+    <string-array name="countries">
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>UK</item>
+        <item>France</item>
+        <item>Spain</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>USA</item>
+        <item>Canada</item>
+    </string-array>
+    <string-array name="conditions">
+        <item>New with tags</item>
+        <item>New</item>
+        <item>Very good</item>
+        <item>Good</item>
+        <item>Satisfactory</item>
+    </string-array>
+
+    <string name="item_name_hint">Enter a title for your item</string>
+    <string name="item_description_hint">Please describe your item with information about the brand,\ncondition, size, colour and style</string>
+    <string name="item_hire_condition_hint">Please also describe the hire condition for your item.</string>
+    <string name="drag_item_help">Please drag the item label above to the position you would like it displayed on your listing. Please also select whether this item is For Inspiration, For Sale or For Hire.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_background_end">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controller"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header">
+
+        <com.stylelist.EditPhotoUtils.Crop.Cropper.CropImageView
+            android:id="@+id/ivCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+            <!--android:id="@+id/ivLoading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--app:indicatorColor="@color/gold_theme_color"/>-->
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/controller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:textColor="@color/black"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Crop"
+            app:customFont="GT-Walsheim-Medium.ttf"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium3" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.DeliveryActivity">
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/custom_back_actionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stylelist.CustomViews.CustomFontTextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="DELIVERY METHOD"
+        android:textSize="@dimen/font_medium1"
+        android:textColor="@color/black"
+        app:customFont="GT-Walsheim-Bold.ttf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include7" />
+
+    <Switch
+        android:id="@+id/switch_delivery_meet_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Meet in person"
+        android:checked="true"
+        android:textSize="@dimen/font_medium1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Switch
+        android:id="@+id/switch_delivery_shipping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Shipping"
+        android:textSize="@dimen/font_medium1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/switch_delivery_meet_person" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/delivery_shipping_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_delivery_shipping">
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_delivery_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/transparent"
+            android:text="Read our shipping tips"
+            android:textAllCaps="false"
+            android:textColor="@color/gold_theme_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/switch_delivery_domestic_shipping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Domestic Shipping"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:layout_constraintEnd_toStartOf="@+id/edit_delivery_domestic_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_delivery_tips" />
+
+        <Switch
+            android:id="@+id/switch_delivery_international_shipping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="International Shipping"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:layout_constraintEnd_toStartOf="@+id/edit_delivery_international_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_delivery_domestic_shipping" />
+
+        <faranjit.currency.edittext.CurrencyEditText
+            android:id="@+id/edit_delivery_domestic_price"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="$0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/font_medium"
+            android:visibility="invisible"
+            app:groupDivider="."
+            app:layout_constraintBottom_toBottomOf="@+id/switch_delivery_domestic_shipping"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/switch_delivery_domestic_shipping"
+            app:locale="en_US"
+            app:monetaryDivider=","
+            app:showSymbol="true" />
+
+        <faranjit.currency.edittext.CurrencyEditText
+            android:id="@+id/edit_delivery_international_price"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="$0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/font_medium"
+            android:visibility="invisible"
+            app:groupDivider="."
+            app:layout_constraintBottom_toBottomOf="@+id/switch_delivery_international_shipping"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/switch_delivery_international_shipping"
+            app:locale="en_US"
+            app:monetaryDivider=","
+            app:showSymbol="true" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

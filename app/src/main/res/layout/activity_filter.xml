@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FilterActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/custom_back_actionbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/filter_button_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3">
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_filter"
+            android:layout_marginTop="8dp"
+            android:text="Condition"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:customFont="GT-Walsheim-Bold.ttf" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/condition_filter"
+            android:layout_marginTop="8dp"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:customFont="GT-Walsheim-Bold.ttf" />
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Types"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:customFont="GT-Walsheim-Bold.ttf" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/category_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="8dp"
+            app:alignContent="space_around"
+            app:alignItems="flex_start"
+            app:dividerDrawable="@drawable/div"
+            app:flexWrap="wrap"
+            app:showDivider="middle"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/condition_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="8dp"
+            app:alignContent="space_around"
+            app:alignItems="flex_start"
+            app:dividerDrawable="@drawable/div"
+            app:flexWrap="wrap"
+            app:showDivider="middle"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/location_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="8dp"
+            app:alignContent="space_around"
+            app:alignItems="flex_start"
+            app:dividerDrawable="@drawable/div"
+            app:flexWrap="wrap"
+            app:showDivider="middle"/>
+
+        <com.stylelist.CustomViews.CustomFontTextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_filter"
+            android:layout_marginTop="8dp"
+            android:text="Searching For"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium1"
+            app:customFont="GT-Walsheim-Bold.ttf" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/sale_type_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="8dp"
+            app:alignContent="space_around"
+            app:alignItems="flex_start"
+            app:dividerDrawable="@drawable/div"
+            app:flexWrap="wrap"
+            app:showDivider="middle"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

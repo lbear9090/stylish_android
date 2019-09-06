@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.stylelist.Activity.LoginActivity"
+    android:background="@color/gray">
+
+    <!--android:background="@drawable/login_pic" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/edit_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_signup_password"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay" />
+
+        <com.stylelist.CustomViews.CustomFontButton
+            android:id="@+id/btn_signup_register"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_facebook_sign_up"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corners_log_in"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            app:customFont="GT-Walsheim-Regular.ttf"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_medium3" />
+
+        <EditText
+            android:id="@+id/edit_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:focusable="true"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay" />
+
+        <RelativeLayout
+            android:id="@+id/btn_facebook_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_corners_facebook"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="false"
+                    android:src="@mipmap/ic_facebook" />
+
+                <com.stylelist.CustomViews.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_padding_large2"
+                    android:layout_alignParentTop="false"
+                    android:layout_toEndOf="@+id/imageView24"
+                    android:layout_toRightOf="@+id/imageView24"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    app:customFont="GT-Walsheim-Regular.ttf"
+                    android:padding="8dp"
+                    android:text="@string/signup_facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_medium3" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_signup_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_signup_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:hint="@string/last_name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay" />
+
+        <EditText
+            android:id="@+id/edit_signup_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_signup_last_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_back_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+</RelativeLayout>
+
